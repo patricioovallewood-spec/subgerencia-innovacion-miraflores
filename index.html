@@ -250,6 +250,16 @@ section{padding:var(--sp-7) 0;}
 .mf-guide *{box-sizing:border-box}.mf-guide-shell{border:1px solid #d7e4de;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 12px 36px #00432c0c}.mf-guide-head{padding:28px 32px;background:var(--guide-color);color:#fff}.mf-guide-head h2{font-size:clamp(25px,3vw,36px);color:#fff;margin:8px 0 12px;line-height:1.15}.mf-guide-head p{color:#fff;margin:0;font-size:16px;max-width:65ch}.mf-guide-tag{color:#ffe1a4;font-size:14px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.mf-guide-body{padding:28px 32px}.mf-guide .mf-guide-context{background:#f1f6f3;border-radius:12px;padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:22px;color:#29483a;font-size:14px}.mf-guide button,.mf-guide a{font:inherit}.mf-guide button:focus-visible,.mf-guide a:focus-visible{outline:3px solid #b97910;outline-offset:4px}.mf-guide-progress{display:flex;align-items:center;gap:16px;margin-bottom:24px;font-size:14px;color:#41504a}.mf-guide-track{flex:1;height:6px;background:#e8eeeb;border-radius:99px;overflow:hidden}.mf-guide-fill{height:100%;background:var(--guide-color)}.mf-guide fieldset{border:0;margin:0;padding:0;min-width:0}.mf-guide legend{font-weight:800;font-size:22px;line-height:1.35;margin-bottom:10px;width:100%}.mf-guide-help{font-size:15px;color:#41504a;margin:0 0 20px}.mf-guide-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mf-guide-option{display:flex;align-items:flex-start;gap:12px;padding:17px;border:1px solid #cddbd3;border-radius:12px;cursor:pointer;background:#fff;line-height:1.4}.mf-guide-option:has(input:checked){border-color:var(--guide-color);background:#eef7f2;box-shadow:inset 0 0 0 1px var(--guide-color)}.mf-guide-option:hover{border-color:var(--guide-color)}.mf-guide-option input{flex-shrink:0;margin:4px 0 0;width:18px;height:18px;accent-color:var(--guide-color)}.mf-guide-option strong{font-size:16px;font-weight:700;display:block}.mf-guide-option small{display:block;color:#41504a;font-size:14px;margin-top:6px}.mf-guide-actions{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px}.mf-guide .mf-guide-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border:1px solid var(--guide-color);border-radius:99px;text-decoration:none;background:var(--guide-color);color:#fff;font-weight:700;cursor:pointer}.mf-guide .mf-guide-button.secondary{background:#fff;color:var(--guide-color)}.mf-guide .mf-guide-button:disabled{opacity:.4;cursor:not-allowed}.mf-guide .mf-guide-link{color:var(--guide-color);text-decoration:underline;background:none;border:0;padding:4px;cursor:pointer;font-size:14px}.mf-guide-result h3{color:var(--guide-color);font-size:30px;margin:8px 0 16px;line-height:1.2}.mf-guide-result p{font-size:16px;color:#41504a}.mf-guide-label{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--guide-color)}.mf-guide-summary{padding:16px;background:#f1f6f3;border-radius:12px;margin:20px 0}.mf-guide-summary ul{margin:8px 0;padding-left:20px}.mf-guide-alt{border-top:1px solid #d7e4de;padding-top:18px;margin-top:22px}.mf-guide-note{font-size:14px!important;color:#52675c!important;margin:20px 0 0!important}.mf-guide-highlight{outline:3px solid #b97910;outline-offset:6px;scroll-margin-top:120px}.mf-guide-noscript{padding:20px}
 @media(max-width:640px){.mf-guide-head,.mf-guide-body{padding:22px 18px}.mf-guide-options{grid-template-columns:1fr}.mf-guide{margin:22px auto}.mf-guide-actions .mf-guide-button{flex:1}.mf-guide legend{font-size:20px}}
 </style>
+<style>
+/* Portal, fichas y constructor de retos */
+:root{--mf-accent:#00432c}.mf-portal{padding:40px 0 48px;background:#f3f7f5}.mf-portal-grid{display:grid;grid-template-columns:minmax(250px,.75fr) minmax(0,1.4fr);gap:42px;align-items:start}.mf-portal-intro{padding-top:30px}.mf-portal h1{font-size:clamp(36px,4vw,56px);max-width:12ch;line-height:1.06}.mf-portal-intro>p{font-size:18px;color:#344d41;margin-bottom:28px}.mf-portal .mf-guide{margin:0;max-width:100%}.mf-portal .mf-guide-head{padding:22px 26px}.mf-portal .mf-guide-head h2{font-size:28px}.mf-portal .mf-guide-body{padding:24px 26px}.mf-portal .mf-guide legend{font-size:20px}.mf-portal-links{display:flex;gap:12px;flex-wrap:wrap}.mf-portal-links a{font-weight:700;color:#00432c;border-bottom:1px solid #abc4b7;padding-bottom:5px}.mf-portal-path{margin-top:36px;border-top:1px solid #ccddd3;padding-top:24px}.mf-portal-path span{display:block;font-size:14px;font-weight:800;color:#52675c;margin:0 0 12px}.mf-portal-path p{font-size:16px;margin:0}.mf-crossnav{background:#fff;border-bottom:1px solid #d7e4de}.mf-crossnav>div{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}.mf-crossnav strong{font-size:14px;color:var(--mf-accent)}.mf-crossnav nav{display:flex;flex-wrap:wrap;gap:18px}.mf-crossnav a{font-size:14px;font-weight:700;color:var(--mf-accent);text-decoration:underline;text-underline-offset:4px}.mf-details{font-size:15px;line-height:1.5;margin:20px 0 0;padding:0;border-top:1px solid currentColor}.mf-details div{padding-top:12px}.mf-details dt{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;opacity:.85}.mf-details dd{margin:4px 0 0;max-width:60ch}.mf-details dd a{color:inherit;text-decoration:underline;font-weight:700}.mf-details-light{color:#fff}.mf-details-dark{color:#173a29}.mf-program-cta{display:inline-block;font-weight:700;margin-top:18px;color:inherit;text-decoration:underline;text-underline-offset:4px}.servicio:has(.mf-details),.prog:has(.mf-details){justify-content:flex-start}.mf-builder{scroll-margin-top:160px;padding:48px 0}.mf-builder-shell{background:#f5f8f6;border:1px solid #d7e4de;border-radius:24px;padding:32px;color:#173a29}.mf-builder h2{font-size:clamp(28px,3vw,38px);color:#173a29;margin-bottom:14px}.mf-builder p{font-size:16px;color:#41504a}.mf-builder-intro{max-width:68ch}.mf-builder summary{cursor:pointer;font-size:17px;font-weight:800;color:var(--mf-accent);padding:16px 0}.mf-builder-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:32px;margin-top:20px;align-items:start}.mf-builder-field{margin-bottom:22px}.mf-builder label{display:block;font-size:16px;font-weight:700;color:#173a29;margin-bottom:8px}.mf-builder input,.mf-builder textarea,.mf-builder select{display:block;width:100%;max-width:100%;font:inherit;font-size:16px;line-height:1.5;border:1px solid #b3cabc;border-radius:10px;background:#fff;padding:12px;color:#0f1a16}.mf-builder textarea{min-height:108px;resize:vertical}.mf-builder input:focus,.mf-builder textarea:focus,.mf-builder select:focus{outline:3px solid #e8b04b;outline-offset:2px}.mf-builder-hint{font-size:14px!important;line-height:1.5;margin:6px 0 0!important;color:#52675c!important}.mf-builder-preview{background:#fff;border:1px solid #d7e4de;border-top:4px solid var(--mf-accent);padding:24px;border-radius:14px;overflow-wrap:anywhere}.mf-builder-preview h3{font-size:24px;line-height:1.2;color:#173a29}.mf-builder-preview h4{font:700 15px Manrope,system-ui,sans-serif;margin:22px 0 6px}.mf-builder-preview p{white-space:pre-wrap;font-size:15px;line-height:1.6}.mf-builder-preview .empty{color:#73857a;font-style:italic}.mf-builder-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.mf-builder button,.mf-builder .mf-action{font:700 15px Manrope,system-ui,sans-serif;cursor:pointer;min-height:46px;border-radius:99px;padding:10px 18px;border:1px solid var(--mf-accent);background:var(--mf-accent);color:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.mf-builder button.secondary{background:#fff;color:var(--mf-accent)}.mf-builder button:disabled{opacity:.4;cursor:not-allowed}.mf-builder button:focus-visible,.mf-crossnav a:focus-visible{outline:3px solid #b97910;outline-offset:4px}.mf-builder-status{font-size:14px!important;min-height:22px;margin-top:12px}.mf-builder-meta{font-size:14px!important;margin-top:22px}.mf-builder .mf-draft-choice{margin:0 0 20px}.mf-institutional h1{font-size:clamp(30px,3vw,44px)}
+@media(max-width:900px){.mf-portal-grid{grid-template-columns:1fr;gap:22px}.mf-portal-intro{padding-top:0}.mf-portal h1{max-width:19ch}.mf-portal-intro>p{margin-bottom:18px}.mf-portal-path{display:none}.mf-builder-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.mf-portal{padding:28px 0}.mf-portal .container{padding-inline:16px}.mf-builder-shell{padding:22px 16px}.mf-builder{padding:32px 0}.mf-crossnav nav{gap:14px}.mf-crossnav strong{width:100%}.mf-builder-preview{padding:18px}.mf-builder-actions button{flex:1}.mf-details{font-size:15px}.mf-portal .mf-guide-head,.mf-portal .mf-guide-body{padding:20px 18px}}
+</style>
+<style>
+.mf-guide,.mf-builder{scroll-margin-top:var(--mf-anchor-offset,150px)}.registro-bar{top:var(--mf-header-height,60px)}
+@media(max-width:600px){.mf-portal{padding-top:20px}.mf-portal h1{font-size:32px;margin-bottom:12px}.mf-portal-intro>.eyebrow{margin-bottom:12px}.mf-portal-intro>p{font-size:16px;line-height:1.5}.mf-portal-links{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mf-portal-links a{font-size:14px}.mf-portal .mf-guide.container{padding-inline:0}.mf-portal .mf-guide-head p{display:none}.mf-portal .mf-guide-head h2{font-size:24px;margin-bottom:0}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -267,11 +277,11 @@ section{padding:var(--sp-7) 0;}
     </a>
     <nav aria-label="Navegación principal">
       <ul class="nav-list" id="nav-list">
-        <li><a href="#problema">El desafío</a></li>
+        <li><a href="#mf-orientador">Tu orientación</a></li>
         <li><a href="#lineas">Las 4 líneas</a></li>
         <li><a href="#gestion">Modelo de gestión</a></li>
         <li><a href="#gobernanza">Gobernanza</a></li>
-        <li><a href="#autor">Quién lo propone</a></li>
+        <li><a href="#propuesta">Propuesta institucional</a></li>
       </ul>
     </nav>
     <a class="nav-cta" href="#contacto">Conversemos</a>
@@ -289,58 +299,7 @@ section{padding:var(--sp-7) 0;}
   </div>
 </div>
 
-<main id="main">
-
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="container">
-    <span class="badge-prop">Propuesta técnica · 2026</span>
-    <h1>Una municipalidad que entiende, coordina y resuelve.</h1>
-    <p class="dep">Subgerencia de Innovación — adscrita a la Gerencia de Desarrollo Económico y Fiscalización.</p>
-    <p class="promesa">
-      <span class="reg show" data-reg="auth">Diseñamos la institucionalidad, la gobernanza y los procesos para transformar los desafíos del distrito en soluciones evaluables, adoptadas por las áreas responsables y sostenibles en el tiempo.</span>
-      <span class="reg" data-reg="vecino">Trámites más simples, respuestas más claras y servicios que de verdad mejoran tu día a día en Miraflores. Esa es la razón de ser de esta nueva subgerencia.</span>
-    </p>
-    <div class="hero-actions"><a class="btn btn-ghost" href="#mf-orientador">Encuentra tu línea</a>
-      <a class="btn btn-primary" href="#lineas">Conocer las 4 líneas</a>
-      <a class="btn btn-ghost" href="#problema">El desafío que resuelve</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><span class="n d">4</span><p>líneas de trabajo articuladas</p></div>
-      <div class="hero-stat"><span class="n">1</span><p>vecino en el centro de todo</p></div>
-      <div class="hero-stat"><span class="n">4</span><p>actores: Estado, empresa, academia, sociedad civil</p></div>
-      <div class="hero-stat"><span class="n d">∞</span><p>replicable a otros municipios del Perú</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- EL DESAFÍO / RECORRIDO -->
-<section class="bg-verde" id="problema">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">El desafío</span>
-      <h2>Hoy, el camino de un problema a su solución se interrumpe.</h2>
-      <p class="reg show" data-reg="auth">Entre identificar un problema público y adoptar una solución sostenible, el recorrido se corta: faltan datos, la coordinación entre gerencias es débil, no siempre hay cómo contratar, y con frecuencia nadie tiene el mandato de decidir la adopción. La relevancia de esta subgerencia se mide por su capacidad de reparar esos cortes.</p>
-      <p class="reg" data-reg="vecino">¿Te ha pasado que un problema del barrio da mil vueltas y nunca se resuelve? No es mala voluntad: el camino para resolverlo se corta en varios puntos. Esta subgerencia existe para destrabar ese camino.</p>
-    </div>
-    <div class="recorrido reveal">
-      <div class="rec-step"><div class="ri">◎</div><div class="rt">Identificar el problema</div></div>
-      <div class="rec-gap">✕</div>
-      <div class="rec-step"><div class="ri">▤</div><div class="rt">Tener los datos</div></div>
-      <div class="rec-gap">✕</div>
-      <div class="rec-step"><div class="ri">⬡</div><div class="rt">Coordinar áreas</div></div>
-      <div class="rec-gap">✕</div>
-      <div class="rec-step"><div class="ri">▰</div><div class="rt">Contratar / ejecutar</div></div>
-      <div class="rec-gap">✕</div>
-      <div class="rec-step"><div class="ri">✓</div><div class="rt">Adoptar y sostener</div></div>
-    </div>
-    <div class="rec-note reveal"><span style="color:var(--coral);font-size:17px;">✕</span> Cada corte es un punto donde hoy el problema se estanca.</div>
-    <div class="rec-fix reveal"><div class="fi">⟐</div><p><span class="reg-inline show" data-reg="auth">La subgerencia es la capacidad institucional que <b>reconecta el recorrido completo</b>: del problema a la solución adoptada, con responsables y evidencia en cada tramo.</span><span class="reg-inline" data-reg="vecino">La subgerencia es la que <b>vuelve a unir ese camino</b>: para que los problemas no se pierdan y las soluciones lleguen de verdad.</span></p></div>
-  </div>
-</section>
-
-<!-- VECINO + 4 LÍNEAS -->
-<section id="lineas">
+<main id="main"><section class="mf-portal" id="top"><div class="container mf-portal-grid"><div class="mf-portal-intro"><span class="eyebrow">Innovación · Miraflores</span><h1>¿Qué quieres impulsar en Miraflores?</h1><p>Encuentra el apoyo para mejorar un servicio, probar una solución o desarrollar un proyecto con impacto en el distrito.</p><div class="mf-portal-links"><a href="#lineas">Explorar las cuatro líneas</a><a href="#mf-reto" data-build-reto>Construir mi reto</a></div><div class="mf-portal-path"><span>TU RECORRIDO</span><p>Encuentra tu línea · Elige el apoyo · Prepara tu reto</p></div></div><div><section class="container mf-guide" id="mf-orientador" data-line="main" aria-label="Orientador de innovación"><noscript><p class="mf-guide-noscript">Activa JavaScript para utilizar el orientador. También puedes explorar las opciones descritas en esta página.</p></noscript></section></div></div></section><section id="lineas">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Cuatro líneas, un solo propósito</span>
@@ -358,7 +317,7 @@ section{padding:var(--sp-7) 0;}
     </div>
     <div class="flecha-abajo reveal">↓ las cuatro líneas existen para servirle ↓</div>
 
-<section class="container mf-guide" id="mf-orientador" data-line="main" aria-label="Orientador de innovación"><noscript><p class="mf-guide-noscript">Activa JavaScript para utilizar el orientador. También puedes explorar las opciones descritas en esta página.</p></noscript></section>
+
     <div class="lineas">
       <!-- L1 -->
       <article class="linea l1 reveal">
@@ -423,6 +382,57 @@ section{padding:var(--sp-7) 0;}
   </div>
 </section>
 
+<section class="mf-builder" id="mf-reto" aria-labelledby="mf-reto-title"><div class="container"><div class="mf-builder-shell"><span class="eyebrow">De la orientación a la acción</span><h2 id="mf-reto-title">Construye tu reto.</h2><p class="mf-builder-intro">Ordena tu necesidad en cinco preguntas. Obtén una ficha con el problema, la orientación elegida y los pasos para preparar una conversación con el equipo municipal.</p><details id="mf-builder-open"><summary>Comenzar mi ficha</summary><div class="mf-builder-grid"><form id="mf-builder-form"><div class="mf-builder-field"><label for="mf-title">Título de tu reto</label><input id="mf-title" name="title" maxlength="150" placeholder="Un nombre breve para tu reto"><p class="mf-builder-hint">Opcional. Puedes completarlo al terminar.</p></div><div class="mf-builder-field"><label for="mf-problem">1. ¿Qué problema quieres resolver?</label><textarea id="mf-problem" name="problem" maxlength="3000" placeholder="Ej.: Los vecinos deben consultar varias veces el estado de un trámite." aria-describedby="mf-hint-problem"></textarea><p id="mf-hint-problem" class="mf-builder-hint">Describe lo que ocurre hoy. Evita empezar por una solución.</p></div><div class="mf-builder-field"><label for="mf-people">2. ¿A quién afecta y cómo?</label><textarea id="mf-people" name="people" maxlength="3000" placeholder="Ej.: Vecinos y comercios que pierden tiempo en visitas y consultas." aria-describedby="mf-hint-people"></textarea><p id="mf-hint-people" class="mf-builder-hint">Identifica a las personas, el lugar y la dificultad que enfrentan.</p></div><div class="mf-builder-field"><label for="mf-attempts">3. ¿Qué has intentado hasta ahora?</label><textarea id="mf-attempts" name="attempts" maxlength="3000" placeholder="Ej.: Revisamos consultas frecuentes y conversamos con usuarios." aria-describedby="mf-hint-attempts"></textarea><p id="mf-hint-attempts" class="mf-builder-hint">Resume acciones, aprendizajes o evidencia. Si aún no has actuado, indícalo.</p></div><div class="mf-builder-field"><label for="mf-change">4. ¿Qué cambio concreto esperas lograr?</label><textarea id="mf-change" name="change" maxlength="3000" placeholder="Ej.: Reducir consultas repetidas y mejorar la claridad de la información." aria-describedby="mf-hint-change"></textarea><p id="mf-hint-change" class="mf-builder-hint">Describe un resultado observable. Puedes incluir un indicador sin inventar una meta.</p></div><div class="mf-builder-field"><label for="mf-resources">5. ¿Qué recursos, información o aliados tienes?</label><textarea id="mf-resources" name="resources" maxlength="3000" placeholder="Ej.: Un equipo de atención, registros de consultas y vecinos interesados." aria-describedby="mf-hint-resources"></textarea><p id="mf-hint-resources" class="mf-builder-hint">Incluye equipo, datos, espacios o posibles colaboradores; también lo que te falta.</p></div></form><div><div class="mf-draft-choice"><label for="mf-draft-line">Línea de trabajo</label><select id="mf-draft-line"><option value="">Aún por definir</option><option value="lab">Lab Miraflores</option><option value="sandbox">Sandbox Miraflores</option><option value="hub">Hub Miraflores</option><option value="invest">Invest Miraflores</option></select><p class="mf-builder-hint">Se completa con tu orientación. Puedes cambiarla para explorar otra vía.</p></div><article class="mf-builder-preview" id="mf-preview" aria-label="Vista previa de tu ficha"></article><p class="mf-builder-hint">Completa el problema, las personas afectadas y el cambio esperado para descargar.</p><div class="mf-builder-actions"><button type="button" id="mf-download" disabled>Descargar ficha</button><button type="button" id="mf-download-text" class="secondary" disabled>Versión de texto</button><button type="button" id="mf-clear" class="secondary">Borrar borrador</button></div><p class="mf-builder-status" id="mf-builder-status" role="status" aria-live="polite"></p><p class="mf-builder-meta">Tu borrador se guarda en este navegador. No se envía a la municipalidad. La ficha descargable se puede imprimir o guardar como PDF desde el navegador.</p></div></div></details></div></div></section><section class="hero mf-institutional" id="propuesta">
+  <div class="container">
+    <span class="badge-prop">Propuesta técnica · 2026</span>
+    <h2>Una municipalidad que entiende, coordina y resuelve.</h2>
+    <p class="dep">Subgerencia de Innovación — adscrita a la Gerencia de Desarrollo Económico y Fiscalización.</p>
+    <p class="promesa">
+      <span class="reg show" data-reg="auth">Diseñamos la institucionalidad, la gobernanza y los procesos para transformar los desafíos del distrito en soluciones evaluables, adoptadas por las áreas responsables y sostenibles en el tiempo.</span>
+      <span class="reg" data-reg="vecino">Trámites más simples, respuestas más claras y servicios que de verdad mejoran tu día a día en Miraflores. Esa es la razón de ser de esta nueva subgerencia.</span>
+    </p>
+    <div class="hero-actions"><a class="btn btn-ghost" href="#mf-orientador">Encuentra tu línea</a>
+      <a class="btn btn-primary" href="#lineas">Conocer las 4 líneas</a>
+      <a class="btn btn-ghost" href="#problema">El desafío que resuelve</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="n d">4</span><p>líneas de trabajo articuladas</p></div>
+      <div class="hero-stat"><span class="n">1</span><p>vecino en el centro de todo</p></div>
+      <div class="hero-stat"><span class="n">4</span><p>actores: Estado, empresa, academia, sociedad civil</p></div>
+      <div class="hero-stat"><span class="n d">∞</span><p>replicable a otros municipios del Perú</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO -->
+
+
+<!-- EL DESAFÍO / RECORRIDO -->
+<section class="bg-verde" id="problema">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">El desafío</span>
+      <h2>Hoy, el camino de un problema a su solución se interrumpe.</h2>
+      <p class="reg show" data-reg="auth">Entre identificar un problema público y adoptar una solución sostenible, el recorrido se corta: faltan datos, la coordinación entre gerencias es débil, no siempre hay cómo contratar, y con frecuencia nadie tiene el mandato de decidir la adopción. La relevancia de esta subgerencia se mide por su capacidad de reparar esos cortes.</p>
+      <p class="reg" data-reg="vecino">¿Te ha pasado que un problema del barrio da mil vueltas y nunca se resuelve? No es mala voluntad: el camino para resolverlo se corta en varios puntos. Esta subgerencia existe para destrabar ese camino.</p>
+    </div>
+    <div class="recorrido reveal">
+      <div class="rec-step"><div class="ri">◎</div><div class="rt">Identificar el problema</div></div>
+      <div class="rec-gap">✕</div>
+      <div class="rec-step"><div class="ri">▤</div><div class="rt">Tener los datos</div></div>
+      <div class="rec-gap">✕</div>
+      <div class="rec-step"><div class="ri">⬡</div><div class="rt">Coordinar áreas</div></div>
+      <div class="rec-gap">✕</div>
+      <div class="rec-step"><div class="ri">▰</div><div class="rt">Contratar / ejecutar</div></div>
+      <div class="rec-gap">✕</div>
+      <div class="rec-step"><div class="ri">✓</div><div class="rt">Adoptar y sostener</div></div>
+    </div>
+    <div class="rec-note reveal"><span style="color:var(--coral);font-size:17px;">✕</span> Cada corte es un punto donde hoy el problema se estanca.</div>
+    <div class="rec-fix reveal"><div class="fi">⟐</div><p><span class="reg-inline show" data-reg="auth">La subgerencia es la capacidad institucional que <b>reconecta el recorrido completo</b>: del problema a la solución adoptada, con responsables y evidencia en cada tramo.</span><span class="reg-inline" data-reg="vecino">La subgerencia es la que <b>vuelve a unir ese camino</b>: para que los problemas no se pierdan y las soluciones lleguen de verdad.</span></p></div>
+  </div>
+</section>
+
+<!-- VECINO + 4 LÍNEAS -->
 <!-- MODELO DE GESTIÓN -->
 <section class="bg-crema" id="gestion">
   <div class="container">
@@ -613,9 +623,9 @@ if(line==='invest')out.push(q('purpose','¿Qué buscas impulsar?',[opt('inversio
 if(line==='sandbox')out.push(q('purpose','¿Cómo quieres participar?',[opt('postulacion','Proponer una solución para probar',{postulacion:8}),opt('participacion','Aportar como vecino o usuario',{participacion:12}),opt('academia','Investigar o evaluar una prueba',{academia:12}),opt('municipal','Impulsar un desafío desde una institución pública',{municipal:12})]),q('ready','¿Qué tienes disponible hoy?',[opt('idea','Una necesidad o idea sin prototipo',{preparacion:5}),opt('prototipo','Un prototipo o solución para validar',{postulacion:3}),opt('experiencia','Experiencia ciudadana o conocimiento del problema',{participacion:3}),opt('investigacion','Un equipo y capacidades de investigación',{academia:3}),opt('equipo','Un área responsable y un desafío definido',{municipal:3})]),q('theme','¿En qué ámbito se ubica el reto?',['Movilidad urbana','Turismo y economía nocturna','Comercio y gastronomía','Sostenibilidad','GovTech y trámites','Espacio público inteligente','Otro / aún por definir'].map((s,i)=>opt(String(i),s)), 'El ámbito ayuda a delimitar la propuesta; no determina su admisión.'));
 return out;}
 function esc(t){return String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function render(focus=false){seq=questions(); const n=seq[step];const prefix=line==='main'?'Nivel 1 · Encuentra tu línea':'Nivel 2 · '+lines[line].name;const title=line==='main'?'¿Qué necesitas resolver en Miraflores?':line==='hub'?'Encuentra tu programa':line==='lab'?'Encuentra el servicio que necesitas':'Encuentra tu ruta de colaboración';
+function render(focus=false){seq=questions(); const n=seq[step];const prefix=line==='main'?'Nivel 1 · Encuentra tu línea':'Nivel 2 · '+lines[line].name;const title=line==='main'?'Encuentra tu línea':line==='hub'?'Encuentra tu programa':line==='lab'?'Encuentra el servicio que necesitas':'Encuentra tu ruta de colaboración';
 root.style.setProperty('--guide-color',line==='main'?'#00432c':lines[line].color);
-root.innerHTML='<div class="mf-guide-shell"><div class="mf-guide-head"><span class="mf-guide-tag">'+prefix+'</span><h2>'+title+'</h2><p>'+(line==='main'?'Cuéntanos quién eres, qué buscas y dónde estás. Te orientamos sobre cómo avanzar.':'Responde unas preguntas para identificar el apoyo que mejor se adapta a tu necesidad.')+'</p></div><div class="mf-guide-body" id="mf-guide-content"></div></div>';
+root.innerHTML='<div class="mf-guide-shell"><div class="mf-guide-head"><span class="mf-guide-tag">'+prefix+'</span><h2>'+title+'</h2><p>'+(line==='main'?'Cuéntanos quién eres y qué necesitas para encontrar tu punto de partida.':'Responde unas preguntas para identificar el apoyo que mejor se adapta a tu necesidad.')+'</p></div><div class="mf-guide-body" id="mf-guide-content"></div></div>';
 const body=root.querySelector('.mf-guide-body');
 if(line!=='main'&&inherited.role){body.innerHTML='<div class="mf-guide-context"><span>Tu perfil: <strong>'+esc(roles.find(x=>x[0]===inherited.role)[1])+'</strong>'+(inherited.stage?' · '+esc(stages.find(x=>x[0]===inherited.stage)[1]):'')+'</span><button class="mf-guide-link" type="button" data-edit>Editar perfil</button></div>';body.querySelector('[data-edit]').onclick=()=>{inherited={};answers={};step=0;render(true);};}
 if(step>=seq.length){result(body);return;}
@@ -633,12 +643,47 @@ let next=best.next;if(isMunicipal)next+=' Este servicio está orientado a equipo
 if(line==='hub'&&best.key==='pacifico'&&answers.stage!=='escala'&&inherited.stage!=='operacion')next+=' Antes de expandirte, confirma que cuentas con producto validado y tracción suficiente.';
 const label=line==='main'?'Tu punto de partida':line==='hub'?'Programa recomendado':line==='lab'?'Servicio recomendado':'Ruta recomendada';
 body.insertAdjacentHTML('beforeend','<div class="mf-guide-result"><span class="mf-guide-label">'+label+'</span><h3 tabindex="-1">'+esc(best.name)+'</h3><p>'+esc(why)+'</p><div class="mf-guide-summary"><strong>Tu siguiente paso</strong><p style="margin:8px 0 0">'+esc(next)+'</p></div><details><summary>¿En qué se basa esta orientación?</summary><ul>'+questions().filter(n=>answers[n.id]!==undefined).map(n=>'<li>'+esc(n.title)+' <strong>'+esc(n.options.find(o=>o.id===answers[n.id]).title)+'</strong></li>').join('')+'</ul></details><div class="mf-guide-actions"><a class="mf-guide-button" data-primary href="'+esc(target(best))+'">'+(line==='main'?'Explorar esta línea':'Conocer esta opción')+'</a><button class="mf-guide-button secondary" type="button" data-change>Cambiar respuestas</button></div>'+(alt&&alt.score>0?'<div class="mf-guide-alt"><strong>'+(tied?'También encaja con tu caso':'Opción complementaria')+': '+esc(alt.name)+'</strong><p>'+esc(alt.why)+'</p><a class="mf-guide-link" data-alt href="'+esc(target(alt))+'">Explorar '+esc(alt.name)+'</a></div>':'')+'<p class="mf-guide-note">Orientación inicial basada en la propuesta del sitio. No equivale a admisión ni confirma convocatorias abiertas.'+(line==='sandbox'?' La viabilidad de una prueba y cualquier condición regulatoria requieren evaluación de las autoridades competentes.':'')+'</p></div>');
-body.querySelector('[data-change]').onclick=()=>{step=0;render(true);};
+const retoAnchor=(line==='lab'||line==='invest')?'#inicio/mf-reto':'#mf-reto';body.querySelector('.mf-guide-actions').insertAdjacentHTML('beforeend','<a class="mf-guide-button secondary" data-build-reto href="'+retoAnchor+'">Construir mi reto</a>');window.dispatchEvent(new CustomEvent('mf:recommendation',{detail:{line:line==='main'?best.key:line,program:line==='main'?'':best.name,next:next,role:role||'',stage:answers.stage||inherited.stage||''}}));body.querySelector('[data-change]').onclick=()=>{step=0;render(true);};
 if(line!=='main'){[[body.querySelector('[data-primary]'),best],[body.querySelector('[data-alt]'),alt]].forEach(([a,item])=>{if(!a||!item)return;a.addEventListener('click',()=>{document.querySelectorAll('.mf-guide-highlight').forEach(x=>x.classList.remove('mf-guide-highlight'));setTimeout(()=>{let el=item.selector?document.querySelector(item.selector):document.getElementById(item.href.slice(1));if(el){const card=el.closest('article')||el;card.classList.add('mf-guide-highlight');card.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'center'});}},140);});});}
 body.querySelector('h3').focus({preventScroll:true});}
 render();
 })();
 </script>
+<script>
+(function(){'use strict';
+const box=document.getElementById('mf-reto');if(!box)return;
+const names={lab:'Lab Miraflores',sandbox:'Sandbox Miraflores',hub:'Hub Miraflores',invest:'Invest Miraflores'};
+const roleNames={empresa:'Empresa o startup',vecino:'Vecino o vecina',universidad:'Universidad o centro de investigación',estado:'Municipalidad u otra institución pública',organizacion:'Organización social o gremio'};
+const keys=['title','problem','people','attempts','change','resources'];const headings={problem:'Problema a resolver',people:'Personas afectadas',attempts:'Acciones y aprendizajes previos',change:'Cambio esperado',resources:'Recursos y aliados'};
+const key='mf_reto_v1',recKey='mf_orientacion_v1';let draft={},rec={};let available=true;
+try{draft=JSON.parse(localStorage.getItem(key)||'{}')||{};rec=JSON.parse(localStorage.getItem(recKey)||'{}')||{};}catch(e){draft={};rec={};available=false;}
+keys.forEach(k=>{if(typeof draft[k]!=='string')draft[k]='';draft[k]=draft[k].slice(0,k==='title'?150:3000);document.getElementById('mf-'+k).value=draft[k];});
+const current=document.getElementById('mf-orientador').dataset.line;
+if(!names[draft.line])draft.line=names[rec.line]?rec.line:(names[current]?current:'');
+const selection=document.getElementById('mf-draft-line');selection.value=draft.line;
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function save(){try{localStorage.setItem(key,JSON.stringify(draft));available=true;}catch(e){available=false;}document.getElementById('mf-builder-status').textContent=available?'Borrador guardado en este navegador.':'El navegador no permite guardar el borrador. Puedes descargar tu ficha.';}
+function route(){return rec.line===draft.line&&rec.program?rec.program:'Programa o servicio por definir';}
+function preparation(){return rec.line===draft.line&&rec.next?rec.next:'Identifica el área o actor con el que necesitas conversar y reúne la información disponible sobre el problema.';}
+function htmlBody(empty=true){let h='<span style="font-size:13px;font-weight:700;letter-spacing:.06em;color:#52675c">MIRAFLORES · FICHA DE RETO</span><h3>'+esc(draft.title||'Mi reto para Miraflores')+'</h3><h4>Orientación elegida</h4><p>'+esc(names[draft.line]||'Línea por definir')+'<br>'+esc(route())+'</p>';
+if(roleNames[rec.role])h+='<p>Perfil: '+esc(roleNames[rec.role])+'</p>';
+for(const k of keys.slice(1))h+='<h4>'+headings[k]+'</h4><p'+(!draft[k].trim()?' class="empty"':'')+'>'+esc(draft[k].trim()|| (empty?'Completa esta respuesta para preparar tu ficha.':'Pendiente de completar.'))+'</p>';
+h+='<h4>Pasos de preparación</h4><p>'+esc(preparation())+'</p><ul><li>Revisa qué información o evidencia te falta reunir.</li><li>Confirma la disponibilidad y las condiciones de la opción elegida con el equipo responsable.</li></ul><p style="font-size:13px;color:#52675c">Orientación inicial basada en la propuesta del sitio. Esta ficha no constituye una postulación ni confirma admisión o convocatorias abiertas.</p>';return h;}
+function update(){document.getElementById('mf-preview').innerHTML=htmlBody();const ready=['problem','people','change'].every(k=>draft[k].trim().length>0);document.getElementById('mf-download').disabled=!ready;document.getElementById('mf-download-text').disabled=!ready;}
+document.getElementById('mf-builder-form').addEventListener('input',e=>{if(!keys.includes(e.target.name))return;draft[e.target.name]=e.target.value;update();save();});
+selection.addEventListener('change',()=>{draft.line=selection.value;update();save();});
+window.addEventListener('mf:recommendation',e=>{rec=e.detail;draft.line=rec.line;selection.value=draft.line;try{localStorage.setItem(recKey,JSON.stringify(rec));}catch(e){}update();save();});
+function download(text,type,ext){const blob=new Blob([text],{type});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='reto-miraflores.'+ext;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000);document.getElementById('mf-builder-status').textContent='Ficha descargada. Tu borrador sigue disponible en este navegador.';}
+document.getElementById('mf-download').onclick=()=>{const documentText='<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(draft.title||'Ficha de reto · Miraflores')+'</title><style>body{font:16px/1.65 system-ui,sans-serif;color:#173a29;max-width:800px;padding:36px;margin:auto}h3{font-size:30px;line-height:1.2}h4{font-size:16px;margin:24px 0 6px}p{white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 12px}header{border-bottom:3px solid #00432c;padding-bottom:18px;margin-bottom:24px}button{padding:12px 20px;background:#00432c;color:white;border:0;border-radius:99px;font:inherit;cursor:pointer}footer{font-size:13px;color:#52675c;border-top:1px solid #cddbd3;padding-top:16px;margin-top:28px}@media print{body{padding:0;max-width:none;font-size:11pt}h4{break-after:avoid}p{orphans:3;widows:3}.no-print{display:none}}</style></head><body><header><strong>Ficha de reto · Miraflores</strong><p>Preparada el '+new Date().toLocaleDateString('es-PE')+'</p></header>'+htmlBody(false)+'<footer>Documento de trabajo generado por el orientador de innovación de Miraflores.</footer></body></html>';download(documentText,'text/html;charset=utf-8','html');};
+document.getElementById('mf-download-text').onclick=()=>{let t='MIRAFLORES · FICHA DE RETO\n'+(draft.title||'Mi reto para Miraflores')+'\n\nOrientación elegida: '+(names[draft.line]||'Línea por definir')+'\n'+route()+'\n';for(const k of keys.slice(1))t+='\n'+headings[k]+'\n'+(draft[k].trim()||'Pendiente de completar.')+'\n';t+='\nPasos de preparación\n'+preparation()+'\nReúne la evidencia disponible y confirma las condiciones con el equipo responsable.\n\nEsta ficha no constituye una postulación ni confirma admisión o convocatorias abiertas.\n';download('\ufeff'+t,'text/plain;charset=utf-8','txt');};
+document.getElementById('mf-clear').onclick=()=>{keys.forEach(k=>{draft[k]='';document.getElementById('mf-'+k).value='';});update();save();document.getElementById('mf-builder-status').textContent='Respuestas del borrador borradas.';};
+function openBuilder(){document.getElementById('mf-builder-open').open=true;}
+document.addEventListener('click',e=>{if(e.target.closest('[data-build-reto]')){openBuilder();setTimeout(()=>box.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'}),90);}});
+if(location.hash.endsWith('mf-reto'))openBuilder();window.addEventListener('hashchange',()=>{if(location.hash.endsWith('mf-reto'))openBuilder();});update();
+})();
+</script>
+
+<script>(function(){const header=document.querySelector('.site-header'),bar=document.querySelector('.registro-bar');function offsets(){const h=header?header.getBoundingClientRect().height:0;document.documentElement.style.setProperty('--mf-header-height',h+'px');document.documentElement.style.setProperty('--mf-anchor-offset',(h+(bar?bar.getBoundingClientRect().height:0)+20)+'px');}offsets();if('ResizeObserver' in window){const observer=new ResizeObserver(offsets);if(header)observer.observe(header);if(bar)observer.observe(bar);}else window.addEventListener('resize',offsets);})();</script>
 </body>
 </html>
 

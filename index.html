@@ -111,6 +111,29 @@ section{padding:var(--sp-7) 0;}
 .ciudadano-card span{color:rgba(255,255,255,.75);font-size:var(--fs-300);position:relative;}
 .flecha-abajo{text-align:center;color:var(--gris);font-size:var(--fs-300);margin:var(--sp-2) 0;}
 
+/* MÉTODO COMÚN — ASÍ TRABAJAMOS */
+.metodo-comun{background:linear-gradient(135deg,var(--verde-900),var(--verde-700));border-radius:var(--radius-md);padding:var(--sp-5) var(--sp-4);margin:var(--sp-3) 0;position:relative;overflow:hidden;}
+.metodo-comun::after{content:'';position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(232,176,75,.18),transparent 70%);}
+.metodo-comun .mc-head{position:relative;margin-bottom:var(--sp-4);max-width:62ch;}
+.metodo-comun .mc-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--dorado);margin-bottom:10px;}
+.metodo-comun .mc-eyebrow::before{content:'';width:22px;height:2px;background:var(--dorado);display:inline-block;}
+.metodo-comun h3{color:#fff;font-size:var(--fs-600);margin:0 0 8px;}
+.metodo-comun .mc-sub{color:rgba(255,255,255,.78);font-size:var(--fs-400);margin:0;}
+.metodo-comun .mc-sub b{color:#fff;}
+.mc-steps{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:0;align-items:stretch;}
+@media (max-width:860px){.mc-steps{grid-template-columns:repeat(2,1fr);gap:12px;}}
+@media (max-width:480px){.mc-steps{grid-template-columns:1fr;}}
+.mc-step{position:relative;padding:0 14px;text-align:center;}
+.mc-step:not(:last-child)::after{content:'→';position:absolute;right:-9px;top:14px;color:rgba(232,176,75,.7);font-size:16px;font-weight:700;z-index:2;}
+@media (max-width:860px){.mc-step::after{display:none;}}
+.mc-step .mn{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.12);border:1.5px solid var(--dorado);color:var(--dorado);font-family:var(--font-display);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;}
+.mc-step h5{color:#fff;font-family:var(--font-body);font-weight:700;font-size:var(--fs-400);margin:0 0 5px;}
+.mc-step p{color:rgba(255,255,255,.72);font-size:var(--fs-300);line-height:1.45;margin:0;max-width:none;}
+.mc-foot{position:relative;margin-top:var(--sp-4);padding-top:var(--sp-3);border-top:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.92);font-size:var(--fs-400);display:flex;align-items:flex-start;gap:10px;}
+.mc-foot p{margin:0;max-width:72ch;color:rgba(255,255,255,.92);}
+.mc-foot .fk{color:var(--dorado);font-size:17px;line-height:1.2;flex-shrink:0;}
+.mc-foot b{color:#fff;}
+
 /* LÍNEAS */
 .lineas{display:flex;flex-direction:column;gap:var(--sp-4);}
 .linea{--acc:var(--verde);--acc-900:var(--verde-900);--acc-soft:#E1F5EE;--acc-ink:#0F6E56;background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);overflow:hidden;transition:all var(--dur) var(--ease);}
@@ -361,7 +384,23 @@ section{padding:var(--sp-7) 0;}
         <span class="reg" data-reg="ciudadano">Tú, que comparas, participas y esperas que tu municipalidad esté a la altura. Todo esto se diseña pensando en ti.</span>
       </div>
     </div>
-    <div class="flecha-abajo reveal">↓ las cuatro líneas existen para servirle ↓</div>
+    <div class="metodo-comun reveal">
+      <div class="mc-head">
+        <span class="mc-eyebrow">Así trabajamos</span>
+        <h3>Un mismo método en las cuatro líneas.</h3>
+        <p class="mc-sub">No improvisamos: cada línea sigue la misma secuencia probada. Es lo que convierte una buena intención en un resultado medible —y lo que hace el modelo <b>replicable en cualquier municipio</b>.</p>
+      </div>
+      <div class="mc-steps">
+        <div class="mc-step"><div class="mn">1</div><h5>Escuchamos</h5><p>Entendemos el problema real junto a las áreas y la ciudadanía.</p></div>
+        <div class="mc-step"><div class="mn">2</div><h5>Diseñamos</h5><p>Co-creamos la solución con evidencia y con quienes la van a usar.</p></div>
+        <div class="mc-step"><div class="mn">3</div><h5>Probamos</h5><p>Pilotamos a escala pequeña, con reglas claras y datos.</p></div>
+        <div class="mc-step"><div class="mn">4</div><h5>Medimos</h5><p>Evaluamos contra una línea base y decidimos con evidencia.</p></div>
+        <div class="mc-step"><div class="mn">5</div><h5>Instalamos</h5><p>Adoptamos lo que funciona y transferimos la capacidad al equipo.</p></div>
+      </div>
+      <div class="mc-foot"><span class="fk">◆</span><p>Lo que contratas no es un informe: es <b>capacidad instalada</b>. Acompañamos hasta que el equipo del municipio lo sostiene por sí mismo.</p></div>
+    </div>
+
+    <div class="flecha-abajo reveal">↓ así se ve el método aplicado en cada una de las cuatro líneas ↓</div>
 
     <div class="lineas">
       <!-- L1 -->

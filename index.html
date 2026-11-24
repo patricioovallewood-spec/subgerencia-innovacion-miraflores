@@ -260,6 +260,52 @@ section{padding:var(--sp-7) 0;}
 .cta .btn-primary{background:var(--tinta);color:#fff;}
 .cta .btn-primary:hover{background:var(--verde-900);color:#fff;}
 
+/* TRAYECTORIA / PRUEBA */
+.tray-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-3);margin-bottom:var(--sp-5);}
+@media (max-width:860px){.tray-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.tray-grid{grid-template-columns:1fr;}}
+.tray-card{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radius-md);padding:var(--sp-3);display:flex;flex-direction:column;gap:8px;transition:all var(--dur) var(--ease);}
+.tray-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.tray-k{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--verde);}
+.tray-card h4{margin:0;font-size:var(--fs-400);color:var(--tinta);}
+.tray-card p{margin:0;font-size:var(--fs-300);color:var(--tinta-2);line-height:1.5;}
+.tray-stat{margin-top:auto;padding-top:10px;border-top:1px dashed var(--linea);}
+.tray-stat .num{font-family:var(--font-display);font-weight:700;font-size:var(--fs-600);color:var(--verde-900);line-height:1;display:block;}
+.tray-stat .lbl{font-size:var(--fs-300);color:var(--gris);}
+.tray-stat .claim{font-family:var(--font-display);font-weight:600;font-size:var(--fs-400);color:var(--verde-900);line-height:1.2;}
+.tray-logos{border-top:1px solid var(--linea);padding-top:var(--sp-4);}
+.tray-logos .tl-k{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--gris);margin-bottom:14px;}
+.tray-logos .tl-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+.tl-item{border:1px solid var(--linea);border-radius:10px;padding:12px 18px;font-weight:700;color:var(--tinta-2);background:var(--crema);font-size:var(--fs-300);min-height:52px;display:flex;align-items:center;}
+.tl-item.slot{border-style:dashed;color:var(--gris);background:transparent;}
+
+/* CÓMO TRABAJAMOS CONTIGO — FASES */
+.fases{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-2);margin-bottom:var(--sp-4);}
+@media (max-width:860px){.fases{grid-template-columns:repeat(2,1fr);gap:var(--sp-3);}}
+@media (max-width:520px){.fases{grid-template-columns:1fr;}}
+.fase{position:relative;background:var(--crema);border-radius:var(--radius-md);padding:var(--sp-3);display:flex;flex-direction:column;gap:10px;border-top:3px solid var(--verde);}
+.fase:nth-child(2){border-top-color:var(--mar);}
+.fase:nth-child(3){border-top-color:var(--coral);}
+.fase:nth-child(4){border-top-color:var(--dorado);}
+.fase-top{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.fase-num{width:30px;height:30px;border-radius:50%;background:var(--verde-900);color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.fase:nth-child(2) .fase-num{background:var(--mar-900);}
+.fase:nth-child(3) .fase-num{background:var(--coral-900);}
+.fase:nth-child(4) .fase-num{background:var(--dorado-900);color:#fff;}
+.fase-when{font-size:11px;font-weight:700;letter-spacing:.03em;color:var(--gris);text-align:right;}
+.fase h4{margin:0;font-size:var(--fs-400);color:var(--tinta);}
+.fase p{margin:0;font-size:var(--fs-300);color:var(--tinta-2);line-height:1.5;}
+.fase-ent{margin-top:auto;font-size:var(--fs-300);color:var(--verde-900);font-weight:600;background:var(--blanco);border-radius:var(--radius-sm);padding:8px 10px;border:1px solid var(--linea);}
+.fase-ent b{font-weight:800;text-transform:uppercase;font-size:10px;letter-spacing:.07em;color:var(--gris);display:block;margin-bottom:2px;}
+.primer-paso{background:linear-gradient(135deg,var(--verde-900),var(--verde-700));color:#fff;border-radius:var(--radius-md);padding:var(--sp-4) var(--sp-5);display:flex;align-items:center;gap:var(--sp-4);flex-wrap:wrap;}
+.primer-paso .pp-badge{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--dorado);}
+.primer-paso h3{color:#fff;margin:6px 0 8px;font-size:var(--fs-600);}
+.primer-paso p{color:rgba(255,255,255,.85);margin:0;max-width:60ch;}
+.primer-paso .pp-txt{flex:1;min-width:260px;}
+.primer-paso .pp-cta{flex-shrink:0;}
+.primer-paso .btn-primary{background:var(--dorado);color:var(--verde-900);}
+.primer-paso .btn-primary:hover{background:#fff;color:var(--verde-900);}
+
 /* FOOTER */
 .site-footer{background:var(--verde-900);color:rgba(255,255,255,.7);padding:var(--sp-5) 0 var(--sp-3);font-size:var(--fs-300);}
 .footer-grid{display:flex;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;margin-bottom:var(--sp-4);}
@@ -299,6 +345,7 @@ section{padding:var(--sp-7) 0;}
         <li><a href="#lineas">Las 4 líneas</a></li>
         <li><a href="#gestion">Modelo de gestión</a></li>
         <li><a href="#gobernanza">Gobernanza</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
         <li><a href="#autor">Quién lo propone</a></li>
       </ul>
     </nav>
@@ -605,7 +652,7 @@ section{padding:var(--sp-7) 0;}
   <div class="container">
     <div class="section-head reveal"><span class="eyebrow">Quién lo propone</span></div>
     <div class="autor reveal">
-      <div class="autor-foto"><span class="ini">POW</span><span class="ph">[Reemplazar por fotografía]</span></div>
+      <div class="autor-foto"><span class="ini">POW</span></div>
       <div>
         <h3>Patricio Ovalle Wood</h3>
         <div class="rol">Especialista en innovación pública, GovTech y ecosistemas de innovación</div>
@@ -620,6 +667,99 @@ section{padding:var(--sp-7) 0;}
           <span class="chip">Top 100 Innovadores de Iberoamérica</span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAYECTORIA / PRUEBA -->
+<section id="trayectoria">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Trayectoria probada</span>
+      <h2>Esto no empieza de cero.</h2>
+      <p>El modelo que propongo nace de capacidades que ya construí y dirigí en gobiernos reales de la región —no de una teoría. Donde funcionó, quedó instalado.</p>
+    </div>
+    <div class="tray-grid reveal">
+      <div class="tray-card">
+        <span class="tray-k">Chile · Municipal</span>
+        <h4>Hub Providencia</h4>
+        <p>Primer hub municipal de innovación de Chile. Fundado y dirigido desde la Municipalidad de Providencia.</p>
+        <div class="tray-stat"><span class="num">1.º</span><span class="lbl">hub municipal de innovación de Chile</span></div>
+      </div>
+      <div class="tray-card">
+        <span class="tray-k">Chile · GovTech</span>
+        <h4>Providencia GovTech Lab</h4>
+        <p>Laboratorio GovTech municipal: pilotos de tecnología aplicados a servicios públicos.</p>
+        <div class="tray-stat"><span class="claim">Pionero en GovTech municipal</span></div>
+      </div>
+      <div class="tray-card">
+        <span class="tray-k">Regional · UdeG + MIT</span>
+        <h4>Hub de Ciudades</h4>
+        <p>Plataforma regional de innovación pública que conecta gobiernos e instituciones de América Latina.</p>
+        <div class="tray-stat"><span class="num">~30</span><span class="lbl">gobiernos · 12 países</span></div>
+      </div>
+      <div class="tray-card">
+        <span class="tray-k">ALC · Multilateral</span>
+        <h4>Banco Interamericano (BID)</h4>
+        <p>Senior Innovation Advisor: acompañamiento a gobiernos de la región en innovación pública y GovTech.</p>
+        <div class="tray-stat"><span class="claim">Asesor sénior de innovación</span></div>
+      </div>
+    </div>
+    <div class="tray-logos reveal">
+      <div class="tl-k">Trayectoria institucional</div>
+      <div class="tl-row">
+        <span class="tl-item">BID</span>
+        <span class="tl-item">MIT · City Science Lab</span>
+        <span class="tl-item">U. de Guadalajara</span>
+        <span class="tl-item">Municipalidad de Providencia</span>
+        <span class="tl-item">Hub de Ciudades</span>
+        <span class="tl-item slot">+ tus logos / reconocimientos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO TRABAJAMOS CONTIGO -->
+<section class="bg-crema2" id="proceso">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Cómo trabajamos contigo</span>
+      <h2>De la conversación a la capacidad instalada.</h2>
+      <p>Un encargo no es un informe: es una secuencia con entregables en cada tramo. Estos son los tiempos típicos; el alcance exacto se define en el diagnóstico.</p>
+    </div>
+    <div class="fases reveal">
+      <div class="fase">
+        <div class="fase-top"><span class="fase-num">1</span><span class="fase-when">Semanas 1–4</span></div>
+        <h4>Diagnóstico</h4>
+        <p>Mapeamos el recorrido interrumpido, priorizamos los desafíos y fijamos la línea base.</p>
+        <div class="fase-ent"><b>Entregable</b>Diagnóstico + cartera de desafíos priorizada.</div>
+      </div>
+      <div class="fase">
+        <div class="fase-top"><span class="fase-num">2</span><span class="fase-when">Semanas 5–10</span></div>
+        <h4>Diseño institucional</h4>
+        <p>Gobernanza, procesos, mandato de adopción y diseño de los primeros pilotos.</p>
+        <div class="fase-ent"><b>Entregable</b>Modelo de gestión + reglas de las 4 líneas.</div>
+      </div>
+      <div class="fase">
+        <div class="fase-top"><span class="fase-num">3</span><span class="fase-when">Meses 3–7</span></div>
+        <h4>Pilotos</h4>
+        <p>1–2 pilotos con reglas claras y criterio de salida: adoptar, iterar o detener.</p>
+        <div class="fase-ent"><b>Entregable</b>Pilotos evaluados con evidencia.</div>
+      </div>
+      <div class="fase">
+        <div class="fase-top"><span class="fase-num">4</span><span class="fase-when">Cierre + acompañamiento</span></div>
+        <h4>Transferencia</h4>
+        <p>Kit de transferencia, capacitación del equipo y traspaso. Nos vamos cuando el equipo ya no nos necesita.</p>
+        <div class="fase-ent"><b>Entregable</b>Capacidad instalada + equipo autónomo.</div>
+      </div>
+    </div>
+    <div class="primer-paso reveal">
+      <div class="pp-txt">
+        <span class="pp-badge">Empieza por aquí</span>
+        <h3>Un diagnóstico de 90 días.</h3>
+        <p>Bajo riesgo, resultado concreto: en 90 días tienes el recorrido mapeado, los desafíos priorizados y una recomendación clara. Con eso decides —con evidencia— si escalar al modelo completo.</p>
+      </div>
+      <div class="pp-cta"><a class="btn btn-primary" href="#contacto">Agendar el diagnóstico →</a></div>
     </div>
   </div>
 </section>
